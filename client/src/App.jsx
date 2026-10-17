@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import placeholder from './assets/placeholder.png'
 import './App.css'
 
 function App() {
@@ -9,6 +10,16 @@ function App() {
 
   return (
     <>
+
+      <header className="header">
+          
+          <h1 className="title">Nightcity news</h1>
+          <img src={placeholder} classname="test" width="170" />
+
+      </header>
+      
+      <section></section>
+
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -29,6 +40,9 @@ function App() {
           Count is {count}
         </button>
       </section>
+
+
+        <button> Click me for news!</button>
 
       <div className="ticks"></div>
 
